@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Estourando Balões</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jogo.js"></script>
+    </head>
+    <body onload="iniciaJogo()">
+        <div style="float: left; width: auto; height: 500px; background-color: #FFF; border: 1px solid #A2A2A2">
+            <table border="0">
+                <tr>
+                    <td>
+                        <img src="imagens/balao_azul_grande.png" alt="">
+                    </td>
+                    <td>
+                        <span id="baloes_inteiros" style="font-size: 40px;"></span>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="0">
+                <tr>
+                    <td>
+                        <img src="imagens/balao_azul_grande_estourado.png" alt="">
+                    </td>
+                    <td>
+                        <span id="baloes_estourados" style="font-size: 40px;"></span>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table border="0" style="width: 140px; height: 132px;">
+                <tr>
+                    <td style="background-image: url('imagens/cronometro.png'); text-align: center;">
+                        <span id="cronometro" style="color: red; font-size: 30px;"></span>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div id="cenario" style="float: left; width: 600px; height: 500px; background-image: url('imagens/cenario.png'); background-position: bottom; border: 1px solid #A2A2A2"> 
+        </div>
+    </body>
+</html>

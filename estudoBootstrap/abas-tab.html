@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <div class="page-header">
+          <h1>Abas Bootstrap</h1>
+          <p class="lead">Alterne facilmente entre conteúdos</p>
+        </div>
+           
+  <!--Criação das abas-->
+  <ul class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="#info" data-toggle="tab">Informações</a></li>
+      <li><a href="#ava" data-toggle="tab">Avaliações</a></li>
+      <li><a href="#compre" data-toggle="tab">Compre Também</a></li>
+  </ul>
+  
+  <!--Conteúdos das Abas-->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="info">
+        <h3>Informações</h3>
+        <p class="text-justify" style="text-indent: 40px;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="ava">
+        <h3>Avaliações</h3>
+        <p class="text-justify" style="text-indent: 40px;">Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="compre">
+        <h3>Compre Também</h3>
+        <p class="text-justify" style="text-indent: 40px;">Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.</p>
+    </div>
+    
+  </div>
+    </div>
+    
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+        <title>Requisições Assíncronas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        
+        <script type="text/javascript">
+        
+        $(document).ready(function(){
+          $(".btn-carrega_conteudo").click(function(){
+              var carrega_url = this.id;
+              carrega_url = carrega_url+"_conteudo.html";
+              $.ajax({
+                  url: carrega_url,
+                  success: function(){
+                      $("#div_conteudo").html("TESTE");
+                  }
+              });
+          }); 
+        });
+        
+        </script>
+</head>
+<body>
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+            <h3>Requisições síncronas e assíncronas</h3>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+
+<div class="row">
+<div class="col-md-4 center"></div>
+<div class="col-md-4 center">
+    <a href="#" class="btn btn-primary btn-carrega_conteudo" id="pag_1">Página 1</a>
+    <a href="#" class="btn btn-primary btn-carrega_conteudo" id="pag_2">Página 2</a>
+    <a href="#" class="btn btn-primary btn-carrega_conteudo" id="pag_3">Página 3</a>
+</div>
+<div class="col-md-4 center"></div>
+</div>
+    
+ <br />
+ 
+<div class="row">
+    <div class="col-md-1"></div>
+
+    <div class="col-md-10" id="div_conteudo"></div>
+
+    <div class="col-md-1"></div>
+</div>
+        
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
